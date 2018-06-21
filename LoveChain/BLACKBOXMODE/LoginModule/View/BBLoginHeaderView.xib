@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BBLoginHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fgA-Tv-6N1" userLabel="upbackgroundView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_Header_BB" translatesAutoresizingMaskIntoConstraints="NO" id="oCP-AQ-Ye1">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                        </imageView>
+                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="社交模式" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpj-js-GEB">
+                            <rect key="frame" x="20" y="33" width="325" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="UVY-c6-TfW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right_arrow_white.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ebu-br-ceH">
+                            <rect key="frame" x="351" y="36.5" width="8" height="14"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="14" id="f57-5e-Bbv"/>
+                                <constraint firstAttribute="width" constant="8" id="feZ-Xa-Erx"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="4fz-31-Ql3"/>
+                        <constraint firstItem="oCP-AQ-Ye1" firstAttribute="top" secondItem="fgA-Tv-6N1" secondAttribute="top" id="8bh-3J-Xfa"/>
+                        <constraint firstItem="tpj-js-GEB" firstAttribute="leading" secondItem="fgA-Tv-6N1" secondAttribute="leading" constant="20" id="E9I-pP-E0P"/>
+                        <constraint firstAttribute="bottom" secondItem="oCP-AQ-Ye1" secondAttribute="bottom" id="R5X-9n-8e0"/>
+                        <constraint firstItem="Ebu-br-ceH" firstAttribute="centerY" secondItem="tpj-js-GEB" secondAttribute="centerY" id="T1e-kH-kz3"/>
+                        <constraint firstAttribute="trailing" secondItem="tpj-js-GEB" secondAttribute="trailing" constant="30" id="U8f-uE-1UR"/>
+                        <constraint firstItem="oCP-AQ-Ye1" firstAttribute="leading" secondItem="fgA-Tv-6N1" secondAttribute="leading" id="akf-XS-TPF"/>
+                        <constraint firstAttribute="trailing" secondItem="oCP-AQ-Ye1" secondAttribute="trailing" id="fi0-SI-ul5"/>
+                        <constraint firstItem="tpj-js-GEB" firstAttribute="top" secondItem="fgA-Tv-6N1" secondAttribute="top" constant="33" id="g6h-Bp-4mo"/>
+                        <constraint firstItem="Ebu-br-ceH" firstAttribute="leading" secondItem="tpj-js-GEB" secondAttribute="trailing" constant="6" id="wh9-o3-6Hp"/>
+                        <constraint firstAttribute="height" constant="200" id="ycG-Yt-5NX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fgA-Tv-6N1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3aU-T3-tRK"/>
+                <constraint firstItem="fgA-Tv-6N1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kL5-OM-a44"/>
+                <constraint firstAttribute="trailing" secondItem="fgA-Tv-6N1" secondAttribute="trailing" id="ngd-7i-Xuy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="changeModeLabel" destination="tpj-js-GEB" id="6VV-KF-aNl"/>
+                <outlet property="rightArrowImg" destination="Ebu-br-ceH" id="LY9-Do-TfU"/>
+                <outlet property="upBackgroundView" destination="fgA-Tv-6N1" id="LhN-0i-6LT"/>
+            </connections>
+            <point key="canvasLocation" x="145" y="-30"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="login_Header_BB" width="16" height="16"/>
+        <image name="right_arrow_white.png" width="8" height="14"/>
+    </resources>
+</document>

@@ -1,0 +1,13 @@
+//
+//  GetMyVoteInfoRequest.h
+//  LoveChain
+//
+//  Created by xnpeng on  2018/6/12.
+//  Copyright © 2018 sitexa. All rights reserved.
+//
+
+#import "BaseHttpsNetworkRequest.h"
+
+@interface GetMyVoteInfoRequest : BaseNetworkRequest
+@property(nonatomic , copy) NSString *accountNameStr;
+@end
